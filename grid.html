@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Grid</title>
+</head>
+
+<style>
+  .box{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    /* border: 3px solid orangered; */
+  }
+
+  .main{
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+    grid-template-columns: auto auto auto auto auto;
+   /* column-gap: 5px;
+   row-gap: 5px; */
+    align-items: center;
+    background-color: yellow;
+  }
+
+  *{
+    margin: 0;
+  }
+
+  .box:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 6;
+    width: 1000px;
+    background-color: lightslategray;
+    color: yellow;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    }
+
+    .box:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 400px;
+    height: 400px;
+    background-image: url("dhoni.jpg");
+    }
+
+  .box:nth-child(3){
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    width: 600px;
+    height: 600px;
+    background-image: url("Ravindra_Jadeja1.jpg");
+  }
+ 
+  .box:nth-child(6){
+    /* Ruturaj_Gaikwad */
+      grid-column-start: 4;
+      grid-column-end: 6;
+      grid-row-start: 4;
+      grid-row-end: 6;
+      width: 400px;
+      height: 400px;
+    }
+    
+    .box:nth-child(5){
+        /* moeen_ali */
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 4;
+      grid-row-end: 6;
+      width: 200px;
+      height: 400px;
+    }
+
+  .box:nth-child(10){
+    /* rahne */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    width: 400px;
+    height: 400px;
+  }
+
+  img{
+    height: 100%;
+    width: 100%;
+  }
+
+  
+</style>
+<body>
+  <div class="main">
+    <div class="box">CSK Team 2024</div>
+    <div class="box" title="MS Dhoni (Captain/WC/Batsman)"></div> <!--2.dhoni-->
+    <div class="box" title="Ravindra Jadeja (All-rounder)"></div> <!--3.jadeja-->
+    <div class="box" title="Tushar Deshpande (Bowler)">
+        <img src="./Tushar_Deshpande.jpg" alt="">
+    </div>
+    <div class="box" title="Moeen Ali (All-rounder)"> <!--5.moeen-->
+        <img src="./moeen_ali.jpg" alt="">
+    </div>
+    <div class="box" title="Ruturaj Gaikwad (Batsman)">
+        <img src="./Ruturaj_Gaikwad.jpg" alt="">
+    </div>
+    <div class="box" title="Shivam Dube (All-rounder)">
+        <img src="./Shivam_Dube.jpg" alt="">
+    </div>
+    <div class="box" title="Mitchell Santner (Bowler)">
+      <img src="./Mitchell_Santner.webp" alt="">
+    </div>
+    <div class="box" title="Maheesh Theekshana (Bowler)">
+        <img src="./Maheesh_Theekshana.png" alt="">
+    </div>
+    <div class="box" title="Ajinkya Rahane (Batsman)">
+        <img src="./Ajinkya_Rahane.webp" alt="">
+    </div>
+    <div class="box" title="Deepak Chahar (Bowler)">
+        <img src="./deepak_chahar1.jpg" alt="">
+    </div>
+    <div class="box" title="Matheesha Pathirana (Bowler)">
+        <img src="./Matheesha_Pathirana2.jpg" alt="">
+    </div>
+    <div class="box" title="Mukesh Choudhary (Bowler)">
+        <img src="./Mukesh_Choudhary.jpg" alt="">
+    </div>
+ 
+    
+  </div>
+</body>
+</html>
